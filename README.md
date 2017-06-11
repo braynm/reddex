@@ -2,6 +2,18 @@
 
 Using Reddit API in Elixir lang - Storing data in GenServer
 
+# Usage
+
+```
+ # Use GenServer directly
+ {:ok, pid} = Reddit.Server.start
+ Reddit.Server.put(pid, "philippines") # Scond argument is the subreddt E.G(r/elixir)
+ Reddit.Server.get(pid, "philippines") # gets the fetched data from Reddit API
+ 
+ # This is used by GenServer
+ Reddit.Api.get("philippines") # directly get the API response - List
+```
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
