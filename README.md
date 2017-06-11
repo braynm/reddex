@@ -1,6 +1,6 @@
 # Reddit
 
-**TODO: Add description**
+Using Reddit API in Elixir lang - Storing data in GenServer
 
 ## Installation
 
